@@ -1,9 +1,45 @@
 ---
-title: Middleman is Watching
-body_class: index
 ---
+#header.container
+  .content
+    %h2
+      %span Hi. We are Kakaolabs
+    %h1 We live and breathe code.
+    %p
+      %span.line We are a small team of developers who are passionate about crafting great software.
+      %span.line We are here to help you build products and tools of the future.
+    .call_to_action
+      %div
+        %a.arrow(href="/about-us/") Meet the Team
+    %img#home-team-photo(src="/images/team-photo.png" alt="Team Photo")
 
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to 'Read Online Documentation', 'http://middlemanapp.com/', title: 'Read Online Documentation', target: '_blank'
+#main.container
+  .border
+  .content
+    %h2
+      %span What We do
+    #home-what-we-do
+      #consulting
+        %img(src="/images/consulting-illustration.png" alt="Consulting Illustration")
+        %h3 Ember.js &amp; production consulting
+        %p We can handle the most challenging technical problems, and we 've also got architecture, production and making chops.
+        %a(href="/consulting") Learn about our process
+
+      #engagements
+        %img(src="/images/engagements-illustration.png" alt="Training and Speaking Engagements illustration")
+        %h3 Training &amp; Speaking Engagements
+        %p We offer public, private and group training classes for Ember.js, Ruby on Rails and JavaScript. We also speak at industry conferences.
+        %a(href="/training/") View our upcoming schedule
+
+      #open-source
+        %img(src="/images/open-source-illustration.png" alt="Open Source illustration")
+        %h3 Open Source Development
+        %p We’ve created and made contributions to some of the most notable and succesful open-source projects in the world.
+        %a(href="/about-us/")See what we've done
+    %hr
+    #home-inquire.inquire.oneline
+      %span.headline Have a project in mind?
+      %a.blue-button-animated(href="/contact")
+        Give us a shot
+        %span.arrow
+

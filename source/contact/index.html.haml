@@ -1,0 +1,40 @@
+---
+---
+#header.container
+  .content
+    %h1 Get in touch
+    %p
+      Need Ember.js Consulting? A training to schedule?
+      %br
+      Just want to say hullo? We're listening!
+
+#main.container
+  .border
+  .content
+    #contact
+      #company-info
+        .map(href="http://maps.google.com/maps?q=517+SW+4th+Ave,+Ste+2,+Portland,+OR+97204&hl=en&t=m&z=17")
+          %img(src="/images/kakaolabs-map.png")
+        %dl
+          %dt Address
+          %dd
+            19/71 Lang Ha, Ba Dinh, Ha Noi
+          %dt Email
+          %dd
+            info@kakaolabs.com
+          %dt Phone
+          %dd
+            (84) 98.256.2288
+          %dt Social
+          %dd
+            %a(href="#")
+              %img(src="/images/twitter-logo.png")
+            %a(href="#")
+              %img(src="/images/facebook-logo.png")
+      #contact-info
+        %form
+          %h3 How we can help
+          %input.field(placeholder="Your name" tabindex=1)
+          %input.field(placeholder="Your email" tabindex=2)
+          %textarea.field(placeholder="Message" tabindex=3)
+          %input#saveForm(value="Send message" type="submit")
