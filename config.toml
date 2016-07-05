@@ -1,0 +1,100 @@
+baseurl = "http://kakaolabs.com/"
+languageCode = "en-us"
+title = "Kakaolabs"
+theme = "hugo-creative-theme"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more informtion take a look at the README.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Kakaolabs"
+	description = "Kakaolabs"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Kakaolabs"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Services"
+			portfolio = "Portfolio"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Let’s create something that your users will love."
+		subtitle   = "We're a consulting company of designers and developers that partners with you to create great products for web and mobile."
+		buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = "Experience and skills you need."
+		description = "We've produced top quality applications with hundreds of clients for more than 12 years. From one person startups to Fortune 500 enterprises, universities, and non-profits. This is our purpose, and here's what we can do for you."
+		buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = ""
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Product design"
+            description = "All our projects are design-led, starting with post-its and sketching, ending with design implemented as code in the app. We use design sprints and user research to build products that are user-centered."
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Web development"
+			description = "Many development practices we follow were first described in \"Extreme Programming Explained\", published more than 25 years ago. Using XP practices improves the quality of our work and happiness of our team."
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Mobile development"
+            description = "Mobile refers to the user, not the device. We design and develop mobile software that idea in mind."
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "User growth"
+            description = "Most startups don't fail to deliver a product; they fail to get traction. We can help with that."
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Contribute to community"
+
+		[params.aside.button]
+			text = "Our opensource"
+			link = "//github.com/kakaolabs"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's make something together"
+		description = "Our best work gets done when we can work face-to-face with you. Chat with a designer or developer at one of our studios near you. "
+		phone = "(+84)-98-256-2288"
+		email = "hello@kakaolabs.com"
